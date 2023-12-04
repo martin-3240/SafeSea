@@ -38,7 +38,7 @@ class BlendedLatnetDiffusion:
             "--batch_size", type=int, default=4, help="The number of images to generate"
         )
         parser.add_argument(
-            "--id", type=int, required=True, help="The target text prompt"
+            "--id", type=int, required=False, help=""
         )
         parser.add_argument(
             "--blending_start_percentage",
@@ -54,7 +54,7 @@ class BlendedLatnetDiffusion:
             help="The destination output path",
         )
         parser.add_argument(
-            "--neg_prompt", type=str, required=True, help="The target text prompt"
+            "--neg_prompt", type=str, required=False, help=""
         )
         parser.add_argument(
             "--gen", type=int, default=43, help="The number of images to generate"
